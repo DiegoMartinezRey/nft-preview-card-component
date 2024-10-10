@@ -25,5 +25,148 @@ img {
 
 body {
   margin: 0;
-  font-family: sans-serif;
+  font-family: "Outfit", sans-serif;
+  background-color: #0d192c;
+  color: white;
+}
+
+p {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 62px 24px;
+}
+
+.card {
+  background-color: #15263f;
+  width: 327px;
+  height: 543px;
+  border-radius: 15px;
+  padding: 24px;
+  position: relative;
+}
+@media screen and (width > 768px) {
+  .card {
+    width: 350px;
+    height: 596px;
+  }
+}
+
+.image-card {
+  border-radius: 8px;
+}
+.image-hover {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  width: 278px;
+  height: 278px;
+
+  background-color: #00fff77c;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+}
+@media screen and (width > 768px) {
+  .image-hover {
+    width: 302px;
+    height: 302px;
+  }
+}
+@media (hover: hover) {
+  .image-hover:hover {
+    opacity: 1;
+  }
+}
+
+.title {
+  font-size: 22px;
+  font-weight: 600;
+  margin: 24px 0 0 0;
+}
+@media (hover: hover) {
+  .title:hover {
+    color: #00fff8;
+  }
+}
+.description {
+  font-size: 18px;
+  font-weight: 300;
+  color: #8bacd9;
+  margin-top: 12px;
+}
+@media screen and (width > 768px) {
+  .description {
+    margin-top: 16px;
+  }
+}
+.flex-info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+  position: relative;
+}
+@media screen and (width > 768px) {
+  .flex-info {
+    margin-top: 24px;
+  }
+}
+.flex-eth {
+  display: flex;
+}
+.text-eth {
+  font-size: 15px;
+  font-weight: 600;
+  color: #00fff8;
+  margin-left: 6.48px;
+}
+.text-time {
+  font-size: 15px;
+  font-weight: 400;
+  color: #8bacd9;
+  margin-left: 7.7px;
+}
+.flex-info::before {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 100%;
+  background-color: #2e405a;
+  position: absolute;
+  top: 35px;
+}
+
+.flex-creator {
+  display: flex;
+  align-items: center;
+  margin-top: 33px;
+}
+@media screen and (width > 768px) {
+  .flex-creator {
+    margin-top: 41px;
+  }
+}
+.avatar {
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+.text-creation {
+  font-size: 15px;
+  color: #8bacd9;
+  margin-left: 16px;
+}
+.text-creator {
+  color: white;
+}
+@media (hover: hover) {
+  .text-creator:hover {
+    color: #00fff8;
+  }
 }
